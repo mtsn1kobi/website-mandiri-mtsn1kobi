@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#post p {
+  margin: 0 0 1em;
+}
+
+@media (min-width: 992px) {
+  .row .col-lg.gallery-col {
+    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+}

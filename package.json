@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc",
+    "gen": "npx pocketbase-typegen --url https://sekolah-backend.sg2.app.web.id --email yokowasis@gmail.com --password 6BS5qXPxRH8eZf -o ./lib/pocketbase-types.ts",
+    "create-tenant": "npx tsx scripts/create-tenant.ts",
+    "seed-sman72": "npx tsx scripts/seed-sman72.ts",
+    "copy-posts-mtsn1kobi": "npx tsx scripts/copy-posts-mtsn1kobi.ts"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "classnames": "^2.3.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.28.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "gray-matter": "^4.0.3",
+    "next": "latest",
+    "openai": "^4.97.0",
+    "pocketbase": "^0.26.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
+    "sharp": "^0.34.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@yokowasis/types-webcomponents": "^1.0.83",
+    "autoprefixer": "^10.4.7",
+    "playwright": "^1.59.1",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
+    "typescript": "^5.9.3",
+    "zod": "^3.24.3"
+  }
+}
