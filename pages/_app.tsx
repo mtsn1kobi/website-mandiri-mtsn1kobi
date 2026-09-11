@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { getTenantId } from "../lib/db";
 import { DataVisitor } from "../lib/visitor";
 import { DataSchoolSettings } from "../lib/tables/school_settings";
+import "../styles/index.css";
 
 export default function MyApp({ Component, pageProps, router }: AppProps) {
   const [faviconUrl, setFaviconUrl] = useState<string>("");

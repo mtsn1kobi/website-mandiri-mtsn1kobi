@@ -3,6 +3,15 @@ module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
     extend: {
+       animation: {
+        'slide-left': 'slide-left 20s linear infinite',
+      },
+      keyframes: {
+        'slide-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
