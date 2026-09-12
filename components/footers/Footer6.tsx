@@ -78,7 +78,7 @@ const Footer6 = (props: { s: Settings }) => {
           font-weight: 500;
           text-align: center;
           text-decoration: none !important;
-          background: linear-gradient(to right, #059669, #84cc16);
+          background: linear-gradient(to right, #2b5d4e, #a8d06c);
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           min-height: 56px;
           line-height: 1.35;

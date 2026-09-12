@@ -112,8 +112,12 @@ export default function Post() {
           </h1>
           <nav aria-label="breadcrumb animated slideInDown">
             <ol className="breadcrumb justify-content-center mb-0">
-              <li className="breadcrumb-item text-white">Home</li>
-              <li className="breadcrumb-item text-white">Pages</li>
+              <li className="breadcrumb-item text-white">
+                <a href="/">Home</a>
+              </li>
+              <li className="breadcrumb-item text-white">
+                <a href="/pages">Pages</a>
+              </li>
               <li
                 className="breadcrumb-item text-primary active"
                 aria-current="page"

@@ -24,8 +24,8 @@ const Header6 = (props: { s: Settings }) => {
       >
         {/* Top Bar (Brand Green) */}
         <div
-          className="text-white py-2 px-3 px-lg-5 d-flex align-items-center justify-content-between"
-          style={{ backgroundColor: "#10d98e", fontSize: "0.875rem" }}
+          className="text-white py-2 px-3 px-lg-5 d-flex align-items-center justify-content-between bg-green-800"
+          style={{ fontSize: "0.875rem" }}
         >
           <div className="d-flex align-items-center">
             <span className="fw-semibold me-3 d-none d-sm-inline">
