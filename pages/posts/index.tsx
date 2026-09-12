@@ -97,16 +97,13 @@ export default function Post() {
       <Header s={s} />
 
       <div
-        className="container-fluid page-header py-6 my-6 mt-0 wow fadeIn mb-0"
+        className="container-fluid page-header py-6 my-6 mt-0 wow fadeIn mb-0 bg-green-900"
         data-wow-delay="0.1s"
         style={{
           visibility: "visible",
           animationDelay: "0.1s",
           animationName: "fadeIn",
-          background: `linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(${
-            post.coverImage || "/img/banner.jpg"
-          }) center center no-repeat`,
-          backgroundSize: "cover",
+          backgroundImage: "none",
         }}
       >
         <div className="container text-center">
@@ -145,6 +142,13 @@ export default function Post() {
           </div>
         </div>
         <div className="row">
+          <div id="cover-image" className="col-lg-8 col-md-8">
+            <img
+              src={post.coverImage}
+              alt={post.title}
+              className="img-fluid mb-4"
+            />
+          </div>
           <div
             className="col-lg-8 col-md-8"
             dangerouslySetInnerHTML={{ __html: post.content }}
